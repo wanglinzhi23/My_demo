@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/titleColor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height">
+        <TextView
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/title_size"
+            android:textColor="@color/white"
+            android:text="@string/function"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <TextView
+        android:textColor="@color/back1"
+        android:paddingLeft="@dimen/padd10"
+        android:paddingTop="@dimen/padd8"
+        android:paddingBottom="@dimen/padd8"
+        android:text="@string/kaitongfuwu"
+        android:textSize="@dimen/content_size15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ln_function_jichu"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/item_selector"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="@dimen/height130">
+            <ImageView
+                android:src="@mipmap/jichu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="@dimen/padd20"
+                android:textSize="@dimen/size12"
+                android:text="@string/kaitongjichufuwu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/back0"/>
+        <LinearLayout
+            android:id="@+id/ln_function_kurongliang"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/item_selector"
+            android:orientation="vertical"
+            android:layout_height="@dimen/height130">
+            <ImageView
+                android:src="@mipmap/addku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="@dimen/padd20"
+                android:textSize="@dimen/size12"
+                android:text="@string/zengjiaku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/back0"/>
+        <LinearLayout
+            android:id="@+id/ln_function_fujia"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/item_selector"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="@dimen/height130">
+            <ImageView
+                android:src="@mipmap/fujia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="@dimen/padd20"
+                android:textSize="@dimen/size12"
+                android:text="@string/kaitongfujia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:textColor="@color/back1"
+        android:paddingLeft="@dimen/padd10"
+        android:paddingTop="@dimen/padd8"
+        android:paddingBottom="@dimen/padd8"
+        android:text="@string/gongneng"
+        android:textSize="@dimen/content_size15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height130"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/item_selector"
+            android:id="@+id/ln_function_bukong"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/addbukong" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padd20"
+                android:text="@string/xinzengbukong"
+                android:textSize="@dimen/size12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/back0"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/ln_function_renyuan"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height130"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/item_selector"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/renyuanku" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padd20"
+                android:text="@string/renyuanku"
+                android:textSize="@dimen/size12" />
+        </LinearLayout>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/back0"/>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="@dimen/height130">
+            <ImageView
+                android:visibility="gone"
+                android:src="@mipmap/ic_launcher_round"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/padd10"
+                android:textSize="@dimen/size12"
+                android:text="@string/kaitongjichufuwu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:textColor="@color/back1"
+        android:paddingLeft="@dimen/padd10"
+        android:paddingTop="@dimen/padd8"
+        android:paddingBottom="@dimen/padd8"
+        android:text="@string/tongji"
+        android:textSize="@dimen/content_size15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ln_function_renliu"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:background="@drawable/item_selector"
+            android:orientation="vertical"
+            android:layout_height="@dimen/height130">
+            <ImageView
+                android:src="@mipmap/renliuliang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="@dimen/padd20"
+                android:textSize="@dimen/size12"
+                android:text="@string/renliuliangtongji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/back0"/>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/ln_function_importent"
+            android:layout_width="0dp"
+            android:background="@drawable/item_selector"
+            android:orientation="vertical"
+            android:layout_height="@dimen/height130">
+            <ImageView
+                android:src="@mipmap/zhongyaokehu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="@dimen/padd20"
+                android:textSize="@dimen/size12"
+                android:text="@string/zhongyaokehu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/back0"/>
+        <LinearLayout
+            android:id="@+id/ln_function_bukongrenyuan"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/item_selector"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="@dimen/height130">
+            <ImageView
+                android:src="@mipmap/bukongrenyuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="@dimen/padd20"
+                android:textSize="@dimen/size12"
+                android:text="@string/bukongrenyuantongji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

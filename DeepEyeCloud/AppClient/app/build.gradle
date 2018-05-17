@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt' //添加这行
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "com.intellif.eyecloud"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':common')
+    compile project(':dispatched')
+    //添加这行
+    //添加这行
+    compile project(':xrecyclerview')
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:recyclerview-v7:21.0.3'
+    compile 'com.github.zcweng:switch-button:0.0.3@aar'
+    compile 'com.jakewharton:butterknife:8.6.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.6.0'
+    compile 'com.bm.photoview:library:1.4.1'
+    compile project(':PhotoViewlibrary')
+    compile 'com.orhanobut:logger:1.15'
+    //TakePhoto
+    compile 'com.jph.takephoto:takephoto_library:4.0.3'
+    //Permission control
+    compile 'com.yanzhenjie:permission:1.0.5'
+    // RxJava Android 支持
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    compile 'com.squareup.retrofit:adapter-rxjava:2.0.0-beta2'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.zhy:base-rvadapter:3.0.3'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile files('libs/org.eclipse.paho.client.mqttv3-1.0.1.jar')
+}

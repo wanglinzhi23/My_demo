@@ -1,0 +1,5 @@
+-- #t_task_info
+insert into t_task_info (id, created, updated, bank_id, cron_status, cron_tabs, decode_type, rule_id, server_id, source_id, source_type, status, task_name, type) values (1, '2015-10-06 21:02:51', '2015-11-24 13:41:51', 16, -1, null, 0, 1, 1, 1, 0, 1, 'ShouldBeOK', 0);
+insert into t_task_info (id, created, updated, bank_id, cron_status, cron_tabs, decode_type, rule_id, server_id, source_id, source_type, status, task_name, type) values (2, '2015-10-15 20:56:52', '2015-11-24 13:41:52', 16, -1, null, 0, 1, 1, 2, 0, 1, 'ShouldBeOK', 0);
+insert into t_task_info (id, created, updated, bank_id, cron_status, cron_tabs, decode_type, rule_id, server_id, source_id, source_type, status, task_name, type) values (3, '2015-11-13 14:19:54', '2015-11-24 13:41:54', 16, -1, null, 0, 2, 1, 4, 0, 1, 'ShouldBeError', 0);
+insert into t_task_info (id, created, updated, bank_id, cron_status, cron_tabs, decode_type, rule_id, server_id, source_id, source_type, status, task_name, type) values (4, '2015-12-23 19:46:53', '2015-12-23 19:46:53', 16, -1, null, 0, 2, 1, 3, 0, 1, 'ShouldBeError', 0);

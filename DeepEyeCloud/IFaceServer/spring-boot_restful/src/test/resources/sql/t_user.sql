@@ -1,0 +1,4 @@
+#t_user
+INSERT INTO t_user (id, name, login, password,role_ids,created,updated,camera_rights,police_station_id,face_id) VALUES (1, 'A', 'a', 'aaaaaa','1','2015-11-17 15:32:07','2015-11-17 15:32:07','1',-1,-1);
+INSERT INTO t_user (id, name, login, password,role_ids,created,updated,camera_rights,police_station_id,face_id) VALUES (2, 'B', 'b', 'bbbbbb','2','2015-11-17 15:32:17','2015-11-17 15:32:07','1',-1,-2);
+INSERT INTO t_user (id, name, login, password,role_ids,created,updated,camera_rights,police_station_id,face_id) VALUES (3, 'C', 'c', 'cccccc','3','2015-11-17 15:32:27','2015-11-17 15:32:07','1',-1,-3);

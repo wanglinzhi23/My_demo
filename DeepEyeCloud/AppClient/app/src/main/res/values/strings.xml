@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name" translatable="false">慧眼云</string>
+    <string name="setting_message" translatable="false">消息通知</string>
+    <string name="setting_cache" translatable="false">清空缓存</string>
+    <string name="setting_question" translatable="false">常见问题</string>
+    <string name="setting_about" translatable="false">关于</string>
+    <string name="alert_message" translatable="false">开启接收消息通知</string>
+    <string name="about_dangqian" translatable="false">当前版本</string>
+    <string name="about_update" translatable="false">版本更新</string>
+    <string name="about_mark" translatable="false">给软件评分</string>
+    <string name="about_hezuo" translatable="false">商务合作</string>
+    <string name="about_contact" translatable="false">联系方式</string>
+    <string name="message" translatable="false">消息</string>
+    <string name="record" translatable="false">记录</string>
+    <string name="my" translatable="false">我的</string>
+    <string name="function" translatable="false">应用</string>
+    <string name="kaitongfuwu" translatable="false">开通服务</string>
+    <string name="gongneng" translatable="false">功能</string>
+    <string name="tongji" translatable="false">统计</string>
+    <string name="kaitongjichufuwu" translatable="false">开通基础服务</string>
+    <string name="zengjiaku" translatable="false">增加库容量</string>
+    <string name="kaitongfujia" translatable="false">开通附加功能</string>
+    <string name="xinzengbukong" translatable="false">新增布控</string>
+    <string name="renyuanku" translatable="false">人员库</string>
+    <string name="renliuliangtongji" translatable="false">人流量统计</string>
+    <string name="zhongyaokehu" translatable="false">重要客户统计</string>
+    <string name="bukongrenyuantongji" translatable="false">布控人员统计</string>
+    <string name="yonghumign" translatable="false">用户名</string>
+    <string name="mima" translatable="false">密码</string>
+    <string name="denglu" translatable="false">登录</string>
+    <string name="xiangsidu" translatable="false">相似度</string>
+    <string name="shebeiguanli" translatable="false">设备管理</string>
+    <string name="shezhi" translatable="false">设置</string>
+    <string name="zhuapaishijian" translatable="false">抓拍时间：</string>
+    <string name="zhuapaiweizhi" translatable="false">抓拍位置：</string>
+    <string name="xiangsidu1" translatable="false">相似度：</string>
+    <string name="chulizhuangtai" translatable="false">处理状态：</string>
+    <string name="shebei" translatable="false">设备ID：</string>
+    <string name="weizhi" translatable="false">位置：</string>
+    <string name="hint1" translatable="false">如正门-01</string>
+    <string name="hint0" translatable="false">请输入设备标识符</string>
+    <string name="guanyu" translatable="false">关于</string>
+    <string name="add_bk_img" translatable="false">上传入库图片（保证一张照片只有一个人脸）</string>
+    <string name="bukongmingchen" translatable="false">布控名称：</string>
+    <string name="hint2" translatable="false">请输入布控名称</string>
+    <string name="fujiaxinxi" translatable="false">附加信息：</string>
+    <string name="hint3" translatable="false">如会员/GT</string>
+    <string name="tianjiabukong" translatable="false">新增布控</string>
+    <string name="tianjiashebei" translatable="false">添加设备</string>
+    <string name="jilu" translatable="false">记录</string>
+    <string name="setting" translatable="false">设置</string>
+    <string name="xiangshidushezhi" translatable="false">相似度设置</string>
+    <string name="tuichu" translatable="false">退出登录</string>
+
+
+    <string-array name="similar" translatable="false">
+        <item >80</item>
+        <item >81</item>
+        <item >82</item>
+        <item >83</item>
+        <item >84</item>
+        <item >85</item>
+        <item >86</item>
+        <item >87</item>
+        <item >88</item>
+        <item >90</item>
+        <item >91</item>
+        <item >92</item>
+        <item >93</item>
+        <item >94</item>
+        <item >95</item>
+        <item >96</item>
+        <item >97</item>
+        <item >98</item>
+        <item >99</item>
+    </string-array>
+</resources>

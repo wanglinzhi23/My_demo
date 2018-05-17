@@ -1,0 +1,5 @@
+-- #t_user
+INSERT INTO t_user (id, name, login, password,role_ids,created,updated,camera_rights,police_station_id,face_id) VALUES (1, '超级管理员(云天励飞)', 'a', 'aaaaaa','1','2015-11-17 15:32:07','2015-11-17 15:32:07',1,-1,-1);
+INSERT INTO t_user (id, name, login, password,role_ids,created,updated,camera_rights,police_station_id,face_id) VALUES (2, '管理员(分局)', 'b', 'bbbbbb','2','2015-11-17 15:32:17','2015-11-17 15:32:07',2,-1,-2);
+INSERT INTO t_user (id, name, login, password,role_ids,created,updated,camera_rights,police_station_id,face_id) VALUES (3, '操作账户(派出所)', 'c', 'cccccc','3','2015-11-17 15:32:27','2015-11-17 15:32:07',3,-1,-3);
+INSERT INTO t_user (id, name, login, password,role_ids,created,updated,camera_rights,police_station_id,face_id) VALUES (4, '查询账号(使用人)', 'intellif', 'renlianxitong','4','2015-11-17 15:32:27','2015-11-17 15:32:07',4,-1,-3);

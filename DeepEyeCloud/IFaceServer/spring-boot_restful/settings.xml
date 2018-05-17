@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+	<!-- http://books.sonatype.com/nexus-book/reference/staging-deployment.html -->
+	<!-- http://www.blogjava.net/libin2722/articles/332876.html <localRepository>F:\m2Repository</localRepository> -->
+
+	<pluginGroups>
+	</pluginGroups>
+
+	<proxies>
+
+	</proxies>
+
+	<servers>
+		<server>
+			<id>nexus-releases</id>
+			<username>deployment</username>
+			<password>introcks</password>
+		</server>
+
+		<server>
+			<id>nexus-snapshots</id>
+			<username>deployment</username>
+			<password>introcks</password>
+		</server>
+	</servers>
+
+
+	<mirrors>
+		<mirror>
+			<id>nexus</id>
+			<mirrorOf>*</mirrorOf>
+			<name>Nexus Intellif</name>
+			<url>http://192.168.2.7:8081/nexus/content/groups/public/</url>
+		</mirror>
+	</mirrors>
+
+	<profiles>
+		<profile>
+			<id>dev</id>
+
+			<activation>
+				<jdk>1.7</jdk>
+			</activation>
+
+			<repositories>
+				<repository>
+					<id>nexus</id>
+					<name>local private nexus</name>
+					<url>http://192.168.2.7:8081/nexus/content/groups/public/</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>nexus</id>
+					<name>local private nexus</name>
+					<url>http://192.168.2.7:8081/nexus/content/groups/public/</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+	</profiles>
+
+	<activeProfiles>
+		<activeProfile>dev</activeProfile>
+	</activeProfiles>
+</settings>

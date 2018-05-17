@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/message_top"
+        android:background="@color/titleColor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height">
+        <TextView
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/title_size"
+            android:textColor="@color/white"
+            android:text="@string/message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/ln_ring"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/padd10"
+            android:paddingRight="@dimen/padd10"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/ring_img"
+                android:src="@mipmap/ring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/lv_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/message_top">
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ln_warm"
+        android:background="@color/warm"
+        android:layout_below="@id/message_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_warm"
+            android:text="消息提醒已开启"
+            android:paddingTop="@dimen/padd10"
+            android:paddingLeft="@dimen/padd10"
+            android:paddingBottom="@dimen/padd10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/content_size15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

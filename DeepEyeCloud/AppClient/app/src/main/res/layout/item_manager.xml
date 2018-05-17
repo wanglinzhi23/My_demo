@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:id="@+id/ln_toggle"
+    android:layout_marginRight="@dimen/height30"
+    android:gravity="center"
+    android:layout_marginLeft="@dimen/height30"
+    android:layout_marginBottom="@dimen/height20"
+    android:background="@drawable/shap_dianpu"
+    android:layout_height="40dp">
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/shap_dianpu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height40">
+        <TextView
+            android:id="@+id/item_manager_name"
+            android:gravity="center"
+            android:text="西丽店"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@color/titleColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

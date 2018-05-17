@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/padd10"
+    android:background="@drawable/item_selector"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padd10"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:id="@+id/a"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_inform_img"
+            android:layout_width="@dimen/height40"
+            android:layout_height="@dimen/height40"
+             />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_toRightOf="@+id/a"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padd10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_inform_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_size" />
+
+            <TextView
+                android:id="@+id/item_inform_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padd10"
+                android:textColor="@color/back1"
+                android:textSize="@dimen/size12" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/itenm_info_show"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/padd10"
+            android:paddingLeft="@dimen/padd10"
+            android:paddingTop="@dimen/padd15"
+            android:paddingBottom="@dimen/padd15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:padding="@dimen/padd10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="150dp">
+            <ImageView
+                android:id="@+id/item_inform_imgleft"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_marginRight="@dimen/padd5"
+                android:layout_height="150dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="150dp">
+        <ImageView
+            android:id="@+id/item_inform_imgright"
+            android:scaleType="fitXY"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/padd5"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/padd10"
+        android:layout_marginRight="@dimen/padd10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item_inform_time"
+            android:textColor="@color/back1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_inform_area"
+            android:textColor="@color/back1"
+            android:layout_marginLeft="@dimen/padd10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_inform_time" />
+        <TextView
+            android:id="@+id/item_inform_similar"
+            android:textColor="@color/back1"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    tools:context="com.intellif.eyecloud.setting.QuestionActivity">
+
+    <com.intellif.eyecloud.utils.TitleLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.intellif.eyecloud.utils.TitleLayout>
+
+    <LinearLayout
+            android:layout_marginTop="@dimen/padd20"
+            android:layout_marginRight="@dimen/padd10"
+            android:layout_marginLeft="@dimen/padd10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="1、如何绑定设备？"
+                android:padding="@dimen/padd10"
+                android:textSize="@dimen/content_size15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:padding="@dimen/padd10"
+                android:text="初次登录时，可在【我的】设备管理中找到添加设备，输入设备唯一标识符即可绑定成功。"
+                android:textSize="@dimen/content_size"
+                android:lineSpacingExtra="@dimen/height3"
+                android:layout_width="match_parent"
+                android:textColor="@color/back1"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/padd20"
+        android:layout_marginRight="@dimen/padd10"
+        android:layout_marginLeft="@dimen/padd10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="2、如何开通其他服务？"
+            android:padding="@dimen/padd10"
+            android:textSize="@dimen/content_size15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:padding="@dimen/padd10"
+            android:text="其它服务业务，请结合场景需求，联系管理员进行开通。"
+            android:textSize="@dimen/content_size"
+            android:lineSpacingExtra="@dimen/height3"
+            android:layout_width="match_parent"
+            android:textColor="@color/back1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

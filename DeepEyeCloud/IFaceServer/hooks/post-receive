@@ -1,0 +1,1 @@
+exec git push --quiet github &

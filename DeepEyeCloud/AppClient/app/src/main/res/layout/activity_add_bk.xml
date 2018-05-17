@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:background="@color/activity"
+    tools:context="com.intellif.eyecloud.main.AddBKActivity">
+    <RelativeLayout
+        android:background="@color/titleColor"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height">
+        <LinearLayout
+            android:id="@+id/ln_back"
+            android:padding="@dimen/padd10"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@mipmap/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:textColor="@color/white"
+            android:text="新增布控"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/title_size"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <TextView
+        android:paddingLeft="@dimen/padd10"
+        android:paddingTop="@dimen/padd5"
+        android:textSize="@dimen/content_size"
+        android:paddingBottom="@dimen/padd5"
+        android:textColor="@color/back1"
+        android:text="@string/add_bk_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_bk"
+        android:layout_marginLeft="@dimen/padd10"
+        android:layout_marginRight="@dimen/padd10"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:layout_marginTop="@dimen/height20"
+        android:paddingLeft="@dimen/padd10"
+        android:paddingTop="@dimen/padd5"
+        android:textSize="@dimen/size12"
+        android:paddingBottom="@dimen/padd5"
+        android:textColor="@color/back1"
+        android:text="填写信息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padd10"
+        android:paddingRight="@dimen/padd10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/bukongmingchen"
+            android:textSize="@dimen/content_size15" />
+
+        <EditText
+            android:id="@+id/tv_addbk_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5"
+            android:lines="1"
+            android:background="@color/white"
+            android:hint="@string/hint2"
+            android:padding="@dimen/padd15"
+            android:textSize="@dimen/content_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/back0"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padd10"
+        android:paddingRight="@dimen/padd10"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:text="@string/fujiaxinxi"
+
+            android:textSize="@dimen/content_size15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/tv_addbk_des"
+            android:layout_weight="3.5"
+            android:hint="@string/hint3"
+            android:padding="@dimen/padd15"
+            android:textSize="@dimen/content_size"
+            android:lines="1"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/back0"/>
+    <Button
+        android:id="@+id/bt_add_bk"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/height60"
+        android:layout_marginLeft="@dimen/height30"
+        android:layout_marginRight="@dimen/height30"
+        android:background="@drawable/login_selector"
+        android:textSize="@dimen/content_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

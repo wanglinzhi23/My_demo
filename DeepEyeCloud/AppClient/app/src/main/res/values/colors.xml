@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="titleColor">#444B5B</color>
+    <color name="white">#ffffff</color>
+    <color name="activity">#f5f5f5</color>
+    <color name="back0">#cccccc</color>
+    <color name="back1">#777777</color>
+    <color name="bottom">#888A90</color>
+    <color name="button_color">#167ACF</color>
+    <color name="button_pressed">#1451a1</color>
+    <color name="red">#d72c2c</color>
+    <color name="red2">#FFF15252</color>
+    <color name="dialog_background">#FFFFFF</color>
+    <color name="dialog_text">#181818</color>
+    <color name="dialog_btn">#1E90FF</color>
+    <color name="dialog_divider">#d1d1d1</color>
+    <color name="warm">#333333</color>
+    <color name="gray">#d9d9d9</color>
+</resources>

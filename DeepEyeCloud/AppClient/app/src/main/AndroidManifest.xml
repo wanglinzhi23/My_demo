@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.intellif.eyecloud">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity android:name=".main.MainActivity" />
+        <activity android:name=".setting.SettingActivity" />
+        <activity android:name=".setting.AlertsActivity" />
+        <activity android:name=".setting.AboutActivity" />
+        <activity android:name=".setting.QuestionActivity" />
+        <activity android:name=".main.LoginActivity">
+        </activity>
+        <activity android:name=".main.RecordActivity" />
+        <activity android:name=".main.AddCameraActivity" />
+        <activity android:name=".main.SimilarActivity" />
+        <activity android:name=".main.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.ManageActivity" />
+        <activity android:name=".main.PeopleActivity" />
+        <activity android:name=".main.PeopleDetailActivity" />
+        <activity android:name=".main.ToggleActivity" />
+        <activity android:name=".main.ToggleMainActivity" />
+        <activity android:name=".main.AddBKActivity" />
+        <activity android:name=".main.PicViewerActivity"/>
+        <service android:name=".service.MQTTService"/>
+    </application>
+
+</manifest>

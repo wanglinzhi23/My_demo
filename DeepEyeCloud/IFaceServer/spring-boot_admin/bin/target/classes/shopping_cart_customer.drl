@@ -1,0 +1,17 @@
+package com.javacodegeeks.drools;
+import crispy_octo_moo.dto.drools.Customer;
+import crispy_octo_moo.dto.drools.Product;
+
+rule "If Coupon==DISC01, apply 5% discount"
+when
+$customer:Customer(coupon == "DISC01" )
+then
+$customer.getCart().addDiscount(((double)$customer.getCart().getTotalPrice())*0.05d);
+end
+
+rule "If consumer is new, apply 2% discount"
+when
+$customer:Customer($customer.isNew())
+then
+$customer.getCart().addDiscount(((double)$customer.getCart().getTotalPrice())*0.02d);
+end

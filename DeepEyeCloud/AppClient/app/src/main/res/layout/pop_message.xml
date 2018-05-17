@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/pop_done"
+        android:text="已处理"
+        android:padding="10dp"
+        android:textColor="@color/button_color"
+        android:background="@drawable/popshap_selector"
+        android:gravity="center"
+        android:textSize="@dimen/title_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/back0"/>
+    <TextView
+        android:id="@+id/pop_error"
+        android:text="误报"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@drawable/popshap_selector"
+        android:textColor="@color/red2"
+        android:textSize="@dimen/title_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/back0"/>
+    <TextView
+        android:id="@+id/pop_cancle"
+        android:text="取消"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@drawable/popshap_selector"
+        android:textSize="@dimen/title_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

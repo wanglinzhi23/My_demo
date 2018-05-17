@@ -1,0 +1,11 @@
+/target/
+/logs/
+/.idea/
+/bak/
+/data/
+/data_0518/
+/lireIndex/
+/site/
+/.settings/
+/.classpath
+/.project

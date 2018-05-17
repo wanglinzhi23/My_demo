@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.lihao.demo.core.mapper.UserMapper">
+
+    <insert id="insert" parameterType="User">
+        INSERT INTO
+            cm_t_user
+            (username, password, nickname, modify_time, modifier_id, modifier_name)
+        VALUES
+            (#{username}, #{password}, #{nickname}, #{modifyTime}, #{modifierId}, #{modifierName});
+    </insert>
+
+    <update id="delete">
+        DELETE FROM
+            cm_t_user
+        where
+            id=#{id}
+    </update>
+
+    <update id="update" parameterType="User">
+        update
+          cm_t_user
+        <trim prefix="set" suffixOverrides=",">
+            <if test="username!=null">username=#{username}, </if>
+            <if test="password!=null">password=#{password}, </if>
+            <if test="nickname!=null">nickname=#{nickname}, </if>
+            <if test="modifyTime!=null">modify_time=#{modifyTime}, </if>
+            <if test="modifierId!=null">modifier_id=#{modifierId}, </if>
+            <if test="modifierName!=null">modifier_name=#{modifierName}, </if>
+        </trim>
+        <where>
+            id=#{id}
+        </where>
+    </update>
+
+    <select id="listAll" resultType="User">
+        SELECT
+            id,username, password, nickname, modify_time, modifier_id, modifier_name
+        from
+            cm_t_user
+    </select>
+
+    <select id="findById" resultType="User">
+        SELECT
+            id,username, password, nickname, modify_time, modifier_id, modifier_name
+        FROM
+            cm_t_user
+        WHERE
+            id=#{id}
+    </select>
+
+</mapper>

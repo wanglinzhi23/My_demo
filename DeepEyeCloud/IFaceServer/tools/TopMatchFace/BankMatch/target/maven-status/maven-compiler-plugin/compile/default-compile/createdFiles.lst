@@ -1,0 +1,9 @@
+com\intellif\bankmatch\TopFaceMatch.class
+com\intellif\bankmatch\service\DataFetch$1.class
+com\intellif\bankmatch\executor\FunctionUtils.class
+com\intellif\bankmatch\utils\FileUtil.class
+com\intellif\bankmatch\vo\BankMatchResultTuple.class
+com\intellif\bankmatch\service\DataFetch.class
+com\intellif\bankmatch\executor\ApplicationResource.class
+com\intellif\bankmatch\dto\FaceResultPKDto.class
+com\intellif\bankmatch\beans\CidInfoDetail.class

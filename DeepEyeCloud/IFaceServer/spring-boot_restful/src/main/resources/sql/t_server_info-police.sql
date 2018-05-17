@@ -1,0 +1,2 @@
+#t_server_info
+INSERT INTO t_server_info (server_name,ip,address,peak, port, status,geo_string,created,updated) VALUES ( '龙岗服务器#1', '172.18.224.142', '龙岗服务器#1', 8 ,5787 ,-1,'POINT(405 250)','2016-01-05 15:09:16','2016-01-05 13:07:16' );

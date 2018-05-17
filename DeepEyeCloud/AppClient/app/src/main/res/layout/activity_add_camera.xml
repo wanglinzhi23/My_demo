@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:background="@color/activity"
+    tools:context="com.intellif.eyecloud.main.AddCameraActivity">
+    <com.intellif.eyecloud.utils.TitleLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.intellif.eyecloud.utils.TitleLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padd10"
+        android:paddingRight="@dimen/padd10"
+        android:layout_height="wrap_content">
+        <TextView
+        android:layout_weight="1"
+        android:text="@string/shebei"
+
+            android:textSize="@dimen/content_size15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+        <EditText
+            android:layout_weight="3.5"
+            android:hint="@string/hint0"
+            android:padding="@dimen/padd15"
+            android:lines="1"
+            android:id="@+id/et_add_cameraId"
+            android:singleLine="true"
+            android:textSize="@dimen/content_size"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/back0"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padd10"
+        android:paddingRight="@dimen/padd10"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:text="@string/weizhi"
+
+            android:textSize="@dimen/content_size15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_weight="3.5"
+            android:hint="@string/hint1"
+            android:padding="@dimen/padd15"
+            android:lines="1"
+            android:singleLine="true"
+            android:id="@+id/et_add_camdes"
+            android:textSize="@dimen/content_size"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/back0"/>
+    <Button
+        android:id="@+id/bt_add_camera"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/height50"
+        android:layout_marginLeft="@dimen/height30"
+        android:layout_marginRight="@dimen/height30"
+        android:background="@drawable/login_selector"
+        android:textSize="@dimen/content_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

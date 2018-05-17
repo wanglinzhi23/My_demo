@@ -1,0 +1,2 @@
+#t_image_info
+INSERT INTO t_image_info ( face_uri, time, uri,faces) VALUES ( 'http://192.168.2.7:8082/api/uploads/default_output_image_f.jpg', '2015-08-11 17:57:05', 'http://192.168.2.7:8082/api/uploads/default_output_image.jpg',1);

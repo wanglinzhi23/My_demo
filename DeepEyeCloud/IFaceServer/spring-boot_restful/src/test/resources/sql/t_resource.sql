@@ -1,0 +1,24 @@
+#t_resource
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (1, "alarm","报警","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (2, "black/bank","黑名单库","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (3, "black/detail","黑名单详情","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (4, "camera","摄像头","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (5, "face","人脸","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (6, "greeting","测试","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (7, "upload","上传","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (8, "image","图像","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (9, "person/deteail","人员详情","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (10, "person/info","人员信息","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (11, "policestation","警察厅","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (12, "role","角色","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (13, "rule","规则","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (14, "search","搜索","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (15, "server","服务器","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (16, "suspect","嫌疑人","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (17, "task","任务","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (18, "user","用户","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (19, "alarm/statistic","报警统计","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (20, "face/search","人脸检索","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (21, "upload/image","图片上传","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (22, "upload/zip","重点人员批量导入","read,write");
+INSERT INTO t_resource (id, uri,cn_name,scopes) VALUES (23, "upload/excel","任务批量导入","read,write");

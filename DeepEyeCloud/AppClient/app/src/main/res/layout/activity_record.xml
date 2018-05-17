@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    tools:context="com.intellif.eyecloud.main.RecordActivity">
+    <com.intellif.eyecloud.utils.TitleLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.intellif.eyecloud.utils.TitleLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padd10"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/record_img"
+            android:layout_width="@dimen/height40"
+            android:layout_height="@dimen/height40"
+             />
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/record_img"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padd10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/record_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_size" />
+
+            <TextView
+                android:id="@+id/record_shenfen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padd10"
+                android:textColor="@color/back1"
+                android:textSize="@dimen/size12" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:padding="@dimen/padd10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/record_leftimg"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="@dimen/padd5"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+             />
+
+        <ImageView
+            android:id="@+id/record_rightimg"
+            android:scaleType="fitXY"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/padd5"
+            android:layout_width="0dp"
+            android:layout_height="150dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:padding="@dimen/padd10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/zhuapaishijian"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/content_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/record_time"
+            android:textColor="@color/back1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/padd10"
+        android:layout_marginRight="@dimen/padd10"
+        android:layout_height="1px"
+        android:background="@color/back0"/>
+    <RelativeLayout
+        android:padding="@dimen/padd10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/zhuapaiweizhi"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/content_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/record_area"
+            android:textColor="@color/back1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/padd10"
+        android:layout_marginRight="@dimen/padd10"
+        android:layout_height="1px"
+        android:background="@color/back0"/>
+    <RelativeLayout
+        android:padding="@dimen/padd10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/xiangsidu1"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/content_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/record_similar1"
+            android:textColor="@color/back1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/padd10"
+        android:layout_marginRight="@dimen/padd10"
+        android:layout_height="1px"
+        android:background="@color/back0"/>
+    <RelativeLayout
+        android:padding="@dimen/padd10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/chulizhuangtai"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/content_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/record_status"
+            android:textColor="@color/back1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/padd10"
+        android:layout_marginRight="@dimen/padd10"
+        android:layout_height="1px"
+        android:background="@color/back0"/>
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:layout_marginTop="@dimen/height50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_record_delete"
+            android:text="删除"
+            android:layout_marginRight="@dimen/height60"
+            android:layout_marginLeft="@dimen/height60"
+            android:background="@drawable/deleteshap_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

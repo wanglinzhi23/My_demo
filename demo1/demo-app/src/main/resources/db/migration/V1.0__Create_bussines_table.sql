@@ -1,0 +1,12 @@
+
+create TABLE IF NOT EXISTS intellif_demo.bs_t_face_info(
+  id BIGINT(20) NOT NULL AUTO_INCREMENT COMMENT 'ID'
+  ,path VARCHAR(200) NOT NULL COMMENT '文件全路径'
+  ,file_name VARCHAR(40) NOT NULL COMMENT '文件名称'
+  ,create_time DATETIME NOT NULL DEFAULT now() COMMENT '创建时间'
+  ,gender SMALLINT COMMENT '性别 1: 男，2: 女'
+  ,age SMALLINT COMMENT '年龄'
+  ,PRIMARY KEY (id)
+)ENGINE=InnoDB CHARSET=UTF8 AUTO_INCREMENT=0 COMMENT '人像小图表';
+
+

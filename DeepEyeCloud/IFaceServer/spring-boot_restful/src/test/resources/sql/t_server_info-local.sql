@@ -1,0 +1,3 @@
+#t_server_info
+INSERT INTO t_server_info (id,server_name,ip,address,peak, port, status,geo_string,created,updated) VALUES (1,'服务器LOCAL', '192.168.2.7', 'VALID测试服务器LOCAL#1', 8 ,9001 ,-1,'POINT(405 250)','2015-10-12 15:09:16','2015-10-12 15:09:16' );
+INSERT INTO t_server_info (id,server_name,ip,address,peak, port, status,geo_string,created,updated) VALUES (2,'服务器LOCAL', '192.168.2.7', 'INVALID测试服务器LOCAL#1', 8 ,9090 ,-1,'POINT(405 250)','2015-10-12 15:09:16','2015-10-12 15:09:16' );

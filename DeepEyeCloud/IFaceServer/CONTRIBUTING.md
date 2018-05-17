@@ -1,0 +1,1 @@
+@see: https://guides.github.com/activities/contributing-to-open-source/
