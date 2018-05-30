@@ -9,12 +9,14 @@
         <result property="phone" column="phone"/>
         <result property="email" column="email"/>
         <collection property="roles" ofType="com.example.demo.entity.SysRole">
+            <result column="id" property="id"/>
             <result column="name" property="name"/>
         </collection>
 
     </resultMap>
     <select id="findByUserName" parameterType="String" resultMap="userMap">
 		select u.*
+		,r.id
 		,r.name
 		from Sys_User u
 		LEFT JOIN sys_role_user sru on u.id= sru.Sys_User_id
